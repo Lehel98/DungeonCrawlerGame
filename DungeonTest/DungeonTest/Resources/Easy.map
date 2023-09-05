@@ -1,0 +1,17 @@
+Difficulty=2
+TableSize=31
+NumberOfBearTraps=8
+NumberOfBushes=12
+NumberOfPuddles=11
+NumberOfFactories=2
+NumberOfHeals=2
+NumberOfBulbs=2
+NumberOfFoils=2
+NumberOfGears=2
+NumberOfPipes=2
+EnemySpeed=250
+EndGameTime=100
+NumberOfRooms=3
+4 7
+23 10
+8 20

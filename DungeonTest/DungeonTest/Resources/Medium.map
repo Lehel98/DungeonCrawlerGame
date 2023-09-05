@@ -1,0 +1,19 @@
+Difficulty=3
+TableSize=45
+NumberOfBearTraps=30
+NumberOfBushes=30
+NumberOfPuddles=25
+NumberOfFactories=4
+NumberOfHeals=6
+NumberOfBulbs=3
+NumberOfFoils=3
+NumberOfGears=3
+NumberOfPipes=3
+EnemySpeed=200
+EndGameTime=100
+NumberOfRooms=5
+4 30
+23 7
+8 21
+32 18
+26 37

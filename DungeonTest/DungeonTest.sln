@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonTest", "DungeonTest\DungeonTest.csproj", "{F7F0BF8E-6981-49A4-8110-F22F6A41E003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonUnitTest", "DungeonUnitTest\DungeonUnitTest.csproj", "{20BF24A9-F075-40DD-AF6D-58931D0022A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7F0BF8E-6981-49A4-8110-F22F6A41E003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F0BF8E-6981-49A4-8110-F22F6A41E003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F0BF8E-6981-49A4-8110-F22F6A41E003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F0BF8E-6981-49A4-8110-F22F6A41E003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20BF24A9-F075-40DD-AF6D-58931D0022A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20BF24A9-F075-40DD-AF6D-58931D0022A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20BF24A9-F075-40DD-AF6D-58931D0022A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20BF24A9-F075-40DD-AF6D-58931D0022A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4D5E37D-B8AC-4C42-8262-772191E92B29}
+	EndGlobalSection
+EndGlobal

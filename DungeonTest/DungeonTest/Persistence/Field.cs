@@ -1,0 +1,40 @@
+﻿
+namespace DungeonTest.Persistence
+{
+    public enum Field
+    {
+        FreeTile,
+        Wall,
+        Box,
+        Bush,
+        Puddle,
+        BearTrap,
+        ClosedFactory,
+        OpenFactory,
+        Heal,
+        Bulb,
+        Foil,
+        Gear,
+        Pipe,
+        ExitGate1,
+        ExitGate2,
+        ExitGate3,
+        ExitGate4,
+        Key1,
+        Key2,
+        Key3,
+        Key4,
+        Player,
+        HiddenPlayer,
+        PlayerInPuddle,
+        TrappedPlayer,
+        Enemy,
+        EnemyInPuddle,
+        HiddenEnemy,
+        TrappedEnemy,
+        Unexplored,
+        Prev,
+        Path,
+        Error
+    }
+}

@@ -1,0 +1,76 @@
+﻿<Window x:Class="DungeonTest.View.MainMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DungeonTest.View"
+        mc:Ignorable="d"
+        Title="" Height="400" Width="700" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Icon="pack://application:,,,/Resources/maze.ico">
+
+    <Window.Resources>
+        <Style TargetType="Button" >
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="ForestGreen" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontFamily" Value="Calibri" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="Black" BorderThickness="0" CornerRadius="20,20,20,20" x:Name="bd">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                    Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" />
+                        </Border>
+                        <ControlTemplate.Triggers>                       
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="Orange"/>
+                                <Setter Property="Foreground" Value="DarkRed" />
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Border CornerRadius="5" BorderThickness="0,0,0,0">
+        <Border.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Resources/AdventureWallpaper.png" Stretch="UniformToFill"/>
+        </Border.Background>              
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Border Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                CornerRadius="5,5,0,0" Margin="-1,0,-1,0" MouseLeftButtonDown="DragWindow">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="pack://application:,,,/Resources/maze.ico" Margin="8,5,8,8" />
+                    <TextBlock Grid.Column="1"  Margin="0,0,0,0"
+            Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}, Path=Title}"/>
+                </Grid>
+            </Border>
+
+            <Button Grid.Row="1" Content="Játék" Margin="0,50,0,0" Command="{Binding LoadMapOpenCommand}" />
+            <Button Grid.Row="1" Content="Toplista" Margin="0,150,0,0" Command="{Binding ToplistCommand}" />
+            <Button Grid.Row="1" Content="Kilépés" Margin="0,250,0,0" Command="{Binding ExitCommand}" />
+        </Grid>
+    </Border>
+</Window>

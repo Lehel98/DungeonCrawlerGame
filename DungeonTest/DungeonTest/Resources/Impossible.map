@@ -1,0 +1,14 @@
+Difficulty=5
+TableSize=61
+NumberOfBearTraps=50
+NumberOfBushes=20
+NumberOfPuddles=40
+NumberOfFactories=6
+NumberOfHeals=10
+NumberOfBulbs=3
+NumberOfFoils=3
+NumberOfGears=3
+NumberOfPipes=3
+EnemySpeed=80
+EndGameTime=100
+NumberOfRooms=0
